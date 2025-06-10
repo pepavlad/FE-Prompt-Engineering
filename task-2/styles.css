@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu {
+  display: flex;
+  gap: 2rem;
+}
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: -150px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transition: top 0.3s ease;
+  }
+  .menu.open {
+    top: 64px;
+  }
+}
